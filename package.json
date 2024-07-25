@@ -1,0 +1,16 @@
+{
+  "name": "review_korea",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.0.0",
+    "express": "^4.17.1",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}

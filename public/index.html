@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>로그인 페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/Login.module.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="/assets/images/image1.jpg" alt="이미지1">
+        </div>
+        <div class="login-form">
+            <h2>로그인</h2>
+            <form action="/api/auth/login" method="POST">
+                <input type="text" name="email" placeholder="이메일" required>
+                <input type="password" name="password" placeholder="비밀번호" required>
+                <input type="submit" value="로그인">
+            </form>
+            <p><a href="/register">회원가입</a></p>
+        </div>
+        <div class="image-container">
+            <img src="/assets/images/image2.jpg" alt="이미지2">
+        </div>
+    </div>
+    <script>
+        // 페이지 로드 후 실행
+        window.onload = function() {
+            // URL에서 'login_failed' 파라미터가 있는지 확인
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('login_failed')) {
+                alert('이메일 또는 비밀번호가 일치하지 않습니다.');
+                // 페이지 이동 후 다시 URL의 파라미터를 제거하고 이동한 히스토리를 남기지 않음
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        };
+    </script>
+</body>
+</html>

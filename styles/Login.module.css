@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff; /* 배경색 설정 */
+}
+.container {
+    width: 100%;
+    max-width: 400px; /* 최대 너비 설정 */
+    margin: 0 auto;
+    padding: 0 10px; /* 좌우 여백 추가 */
+    box-sizing: border-box;
+}
+.loginForm {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.loginForm input[type="text"],
+.loginForm input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* 입력 필드 사이 여백 추가 */
+}
+.loginForm input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.loginForm input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    display: block; /* 이미지를 블록 요소로 설정하여 가로 폭에 맞게 조정 */
+    margin-bottom: 0px; /* 이미지와 폼 사이 여백 추가 */
+}
